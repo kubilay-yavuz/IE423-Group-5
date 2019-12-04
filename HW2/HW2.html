@@ -11862,7 +11862,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="a)-For-each-row-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-S-chart-are-used-respectively.-The-reason-for-using-S-chart-is-that-sample-size-is-greater-than-10-which-is-the-maximum-sample-size-for-using-R-chart.">a) For each row of our image, we constructed an appropriate chart for monitoring the mean and the variance. For the mean and the variance, X-bar chart and S chart are used respectively. The reason for using S chart is that sample size is greater than 10 which is the maximum sample size for using R chart.<a class="anchor-link" href="#a)-For-each-row-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-S-chart-are-used-respectively.-The-reason-for-using-S-chart-is-that-sample-size-is-greater-than-10-which-is-the-maximum-sample-size-for-using-R-chart.">&#182;</a></h3>
+<h3 id="a)-Taking-n=1-samples-(each-pixel)-from-each-row-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-2sigma-control-limits-are-used.-The-reason-for-using-2-sigma-is-that-we-wanted-to-decrease-type-2-error.">a) Taking n=1 samples (each pixel) from each row of our image, we constructed an appropriate chart for monitoring the mean and the variance. For the mean and the variance, X-bar chart and 2sigma control limits are used. The reason for using 2 sigma is that we wanted to decrease type 2 error.<a class="anchor-link" href="#a)-Taking-n=1-samples-(each-pixel)-from-each-row-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-2sigma-control-limits-are-used.-The-reason-for-using-2-sigma-is-that-we-wanted-to-decrease-type-2-error.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -11948,7 +11948,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The grain texture of the image displays horizontal tendency. However, the grains are not perfectly horizontal and the slight transverse deviation from the defined rows causes high standard deviation in some of the samples. On the other hand, some of the horizontal grain texture display a better match with the row. These rows generate extremely small standard deviation because of the pixel color distribution. Because there are rows having sample standard deviation values either extremely high or extremely low, a high percentage of the sample rows are found to be out-of-control according to S chart constructed from the sample data.</p>
+<p>The grain texture of the image displays horizontal tendency. However, the grains are not perfectly horizontal and the pixels in a row which breaks the horizontal grain texture tendency increases variation. Hence, they are found to be out-of control. On the other hand, some of the horizontal grain texture display a better match within the row. Comparing the rows explained above, they have less out-of control situations due to small standard deviation.</p>
 
 </div>
 </div>
@@ -12000,16 +12000,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The horizontal grain texture causes the mean value of sample rows to be different from each other. Some of the rows are close to white while some of them are close to black due to the grain texture. X-bar values among samples deviate significantly from the overall sample mean, causing many out-of-control samples.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="b)-For-each-column-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-S-chart-are-used-respectively.-The-reason-for-using-S-chart-is-that-sample-size-is-greater-than-10-which-is-the-maximum-sample-size-for-using-R-chart.">b) For each column of our image, we constructed an appropriate chart for monitoring the mean and the variance. For the mean and the variance, X-bar chart and S chart are used respectively. The reason for using S chart is that sample size is greater than 10 which is the maximum sample size for using R chart.<a class="anchor-link" href="#b)-For-each-column-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-S-chart-are-used-respectively.-The-reason-for-using-S-chart-is-that-sample-size-is-greater-than-10-which-is-the-maximum-sample-size-for-using-R-chart.">&#182;</a></h3>
+<h3 id="b)-Taking-n=1-samples(each-pixel)-for-each-column-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-2sigma-control-limits-are-used.">b) Taking n=1 samples(each pixel) for each column of our image, we constructed an appropriate chart for monitoring the mean and the variance. For the mean and the variance, X-bar chart and 2sigma control limits are used.<a class="anchor-link" href="#b)-Taking-n=1-samples(each-pixel)-for-each-column-of-our-image,-we-constructed-an-appropriate-chart-for-monitoring-the-mean-and-the-variance.-For-the-mean-and-the-variance,-X-bar-chart-and-2sigma-control-limits-are-used.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -12095,7 +12086,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since the grain texture of the image displays horizontal tendency; there are various pixel values within each column. Therefore the standard deviation of the columns are high but the values do not differ much from column to column. This explains why the central line of the S chart is high and high percentage of the values stand between control limits in contrast to results that we obtained in part a.</p>
+<p>Since the grain texture of the image displays horizontal tendency; there are various pixel values within each column. Therefore the standard deviation of the columns are high and it causes many out-of control pixels to be found. It is observed that the out-of control pixels found from the columns are mostly the horizontal grains, since these pixels have similar values horizontally but differ from the pixels which are in the same column.</p>
 
 </div>
 </div>
@@ -12142,15 +12133,6 @@ div#notebook {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Even though the variety within columns are high for every single column, the mean values are similar for each column. So, we found less out-of-control situations from X-bar chart. Because there are less out-of-control samples in part b, the number of black points in part b is less than in part a. Additionally, the value of the central line of the X-bar chart is the same for both part a and part b. This is due to the fact that central line implies the overall sample mean.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
