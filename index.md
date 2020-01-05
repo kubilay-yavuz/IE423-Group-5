@@ -13,3 +13,7 @@ We are the Group 5. Our group members are:
 
 ## Project Part 2
 [Here](HW2/HW2.html) is our Project Part 2.
+
+## Project Part 3
+[Here](HW3/HW3.html) is our Project Part 3 code.
+[Here](HW3/HW3-Report.html) is our Project Part 3 report.
